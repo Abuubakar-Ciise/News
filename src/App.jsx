@@ -5,7 +5,7 @@ import LanguageDropdown from "./components/LanguageDropdown";
 
 const App = () => {
   const [category, setCategory] = useState("");
-  const [selectedLanguage, setSelectedLanguage] = useState("en");
+  const [selectedLanguage, setSelectedLanguage] = useState("us");
 
   return (
     <div>
