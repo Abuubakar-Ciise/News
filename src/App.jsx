@@ -4,8 +4,8 @@ import News from "./components/News";
 import LanguageDropdown from "./components/LanguageDropdown";
 
 const App = ()=>{
-  const  [category,setCategory] = useState("")
-  const [selectedLanguage, setSelectedLanguage] = useState('us');
+  const  [category,setCategory] = useState("us")
+  const [selectedLanguage, setSelectedLanguage] = useState('');
   return(
     <div>
     <Newsbar setCategory={setCategory}/>
