@@ -4,7 +4,7 @@ import News from "./components/News";
 import LanguageDropdown from "./components/LanguageDropdown";
 
 const App = () => {
-  const [category, setCategory] = useState("general");
+  const [category, setCategory] = useState("");
   const [selectedLanguage, setSelectedLanguage] = useState("en");
 
   return (
