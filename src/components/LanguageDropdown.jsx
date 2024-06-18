@@ -4,6 +4,7 @@ const LanguageSelector = ({ selectedLanguage, setSelectedLanguage }) => {
 
     const handleLanguageChange = (event) => {
         setSelectedLanguage(event.target.value);
+        
     };
 
 
