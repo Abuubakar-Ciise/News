@@ -8,7 +8,7 @@ const News = ({ category, selectedLanguage })=>{
 
     async function getArticles() {
         try {
-            let url = `https://newsapi.org/v2/top-headlines?country=${selectedLanguage}&category=${category}&apiKey=${import.meta.env.VITE_API_KEY}`
+            let url = `https://newsapi.org/v2/top-headlines?country=${selectedLanguage}&category=${category}&apiKey=009b899d1044432382df437cbe483de9`
             const res = await fetch(url)
             if(!res.ok){
                 throw new Error('newtork res is not ok')
