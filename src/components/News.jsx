@@ -49,6 +49,7 @@ const News = ({ category, selectedLanguage })=>{
                     </svg>
                 </button>
             </div> */}
+            
         </div>
     </section>
     
