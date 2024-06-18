@@ -8,7 +8,7 @@ const News = ({ category, selectedLanguage })=>{
 
     async function getArticles() {
         try {
-            let url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${import.meta.env.VITE_API_KEY}`
+            let url = `https://newsapi.org/v2/top-headlines?country=${selectedLanguage}&category=${category}&apiKey=${import.meta.env.VITE_API_KEY}`
             const res = await fetch(url)
             if(!res.ok){
                 throw new Error('newtork res is not ok')
@@ -49,7 +49,6 @@ const News = ({ category, selectedLanguage })=>{
                     </svg>
                 </button>
             </div> */}
-            
         </div>
     </section>
     
