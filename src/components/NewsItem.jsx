@@ -10,7 +10,8 @@ const NewsItem = ({title,description,url,date,src})=> {
                                 <img class="object-cover w-full h-full" src={src?src:img} alt="" />
                             </a>
     
-                            
+
+                             
                         </div>
                         <span class="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase">{date}</span>
                         <p class="mt-5 text-2xl font-semibold">
