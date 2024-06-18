@@ -1,30 +1,105 @@
-import React from "react";
-import img from '../assets/download.jpeg'
-const NewsItem = ({title,description,url,date,src})=> {  
-     
-    return(
-        <div class="overflow-hidden bg-white rounded shadow">
-                    <div class="p-5">
-                        <div class="relative">
-                            <a href="#" title="" class="block aspect-w-4 aspect-h-3">
-                                <img class="object-cover w-full h-full" src={src?src:img} alt="" />
-                            </a>
-    
-                            
-                        </div>
-                        <span class="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase">{date}</span>
-                        <p class="mt-5 text-2xl font-semibold">
-                            <a href="#" title="" class="text-black">{title}</a>
-                        </p>
-                        <p class="mt-4 text-base text-gray-600">{description}</p>
-                        <a href={url} title="" class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-blue-600 transition-all duration-200 border-b-2 border-transparent hover:border-blue-600 focus:border-blue-600">
-                            Continue Reading
-                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-    )
-}
-export default NewsItem
+import React, { useState } from "react";
+
+const Newsbar = ({setCategory}) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <header className="bg-black border-b border-gray-700">
+    <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <nav className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex-shrink-0">
+          <a href="#" title="" className="flex text-white fs-3" >
+            <span className="bg-red-600 text-white text-2xl rounded-md ml-2 px-2 py-1">News</span>
+          </a>
+        </div>
+  
+        <button
+          type="button"
+          className="inline-flex p-2 text-white transition-all duration-200 rounded-md md:hidden focus:bg-gray-800 hover:bg-gray-800"
+          onClick={toggleMenu}
+        >
+          <svg
+            className="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+  
+        <div className="hidden md:flex md:items-center md:space-x-10">
+          <ul className="flex space-x-10">
+            <li className="py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70" onClick={() => setCategory("technology")}>
+              Technology
+            </li>
+            <li className="py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70" onClick={() => setCategory("sports")}>
+              Sports
+            </li>
+            <li className="py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70" onClick={() => setCategory("science")}>
+              Science
+            </li>
+            <li className="py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70" onClick={() => setCategory("business")}>
+              Business
+            </li>
+            <li className="py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70" onClick={() => setCategory("entertainment")}>
+              Entertainment
+            </li>
+            <li className="py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70" onClick={() => setCategory("general")}>
+              General
+            </li>
+            <li className="py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70" onClick={() => setCategory("health")}>
+              Health
+            </li>
+          </ul>
+        </div>
+      </nav>
+  
+      {isMenuOpen && (
+        <nav className="flex flex-col items-center mt-10 space-y-2 md:hidden">
+          <ul className="flex flex-col space-y-2">
+            <li className="py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70" onClick={() => setCategory("technology")}>
+              Technology
+            </li>
+            <li className="py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70" onClick={() => setCategory("sports")}>
+              Sports
+            </li>
+            <li className="py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70" onClick={() => setCategory("science")}>
+              Science
+            </li>
+            <li className="py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70" onClick={() => setCategory("business")}>
+              Business
+            </li>
+            <li className="py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70" onClick={() => setCategory("entertainment")}>
+              Entertainment
+            </li>
+            <li className="py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70" onClick={() => setCategory("general")}>
+              General
+            </li>
+            <li className="py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70" onClick={() => setCategory("health")}>
+              Health
+            </li>
+            <li className="py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70" onClick={() => setCategory("pricing")}>
+              Pricing
+            </li>
+          </ul>
+        </nav>
+      )}
+    </div>
+  </header>
+  
+  
+  );
+};
+
+export default Newsbar;
