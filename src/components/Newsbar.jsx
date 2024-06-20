@@ -8,7 +8,7 @@ const Newsbar = ({ setCategory, interests }) => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const categories = interests ? interests : ["technology", "sports", "science", "business", "entertainment", "general", "health"];
+  const categories = interests ? interests : ["technology", "sports", "science", "business", "entertainment", "general", "health", "wraa"];
 
   return (
     <header className="bg-black border-b border-gray-700">
