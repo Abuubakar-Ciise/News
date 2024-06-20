@@ -6,8 +6,8 @@ import Login from './components/Login';
 import LanguageDropdown from './components/LanguageDropdown';
 
 const users = [
-  { name: 'John', password: 'password123', interests: ['technology', 'sports'] },
-  { name: 'Jane', password: 'mypassword', interests: ['health', 'science'] },
+  { name: 'Abuubakar', password: '2491', interests: ['technology', 'sports'] },
+  { name: 'Bakar', password: '6551', interests: ['health', 'science'] },
 ];
 
 const App = () => {
