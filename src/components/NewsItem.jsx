@@ -1,4 +1,4 @@
-limport React from "react";
+import React from "react";
 import img from '../assets/download.jpeg'
 const NewsItem = ({title,description,url,date,src})=> {  
      
