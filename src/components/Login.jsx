@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = ({ setUser, users }) => {
   const [name, setName] = useState('');
@@ -10,7 +9,7 @@ const Login = ({ setUser, users }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const user = users.find(user => user.name === name && user.password === password);
+    const user = users.find((u) => u.name === name && u.password === password);
     if (user) {
       setUser(user);
       navigate('/');
@@ -56,10 +55,16 @@ const Login = ({ setUser, users }) => {
               type="submit"
               className="w-full py-2 px-4 text-white bg-blue-600 hover:bg-blue-700 rounded-md focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
             >
-              Sign in
+              Login
             </button>
           </div>
         </form>
+        <p className="text-center text-sm text-gray-600">
+          Don't have an account?{' '}
+          <Link to="/signup" className="text-blue-600 hover:underline">
+            Signup
+          </Link>
+        </p>
       </div>
     </div>
   );
