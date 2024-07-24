@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Newsbar from './components/Newsbar';
-import News from './components/News';
-import Login from './components/Login';
-import Signup from './components/Signup';
+import Newsbar from './pages/Newsbar';
+import News from './pages/News';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 import LanguageDropdown from './components/LanguageDropdown';
 
 const App = () => {
