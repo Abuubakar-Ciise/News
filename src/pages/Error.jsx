@@ -4,8 +4,10 @@ import './Error.css'
 const Error = ({ message }) => {
 
     useEffect(() => {
-        alert("The API is unable to display news while the project is hosted online. Please download the project to view the news content. Thank you.");
-    }, []);
+        if (message) {
+            alert("The API is unable to display news while the project is hosted online. Please download the project to view the news content. Thank you.");
+        }
+    }, [message]);
 
     return (
         <div className="container">
