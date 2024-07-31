@@ -1,4 +1,6 @@
 Note: The API is unable to display news while the project is hosted online. Please download the project to view the news content. Thank you.");
+This Link is for hosting so you can the project as online 
+https://news-six-beige.vercel.app
 
 to download the project fallow the steps below 
 
