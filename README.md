@@ -1,15 +1,1 @@
-Note: The API is unable to display news while the project is hosted online. Please download the project to view the news content. Thank you.");
-This Link is for hosting so you can the project as online 
-https://news-six-beige.vercel.app
-
-to download the project fallow the steps below 
-
-before that this project is News that display different categories of news like sports, health and science and more .
-when you run the project you see the news and News categories This project have signin and signup  when make account you have to choose what news categories you need to see  when you make login you get what you interested from news.
-that's is all know make download to pro project 
-
-1. click the Green button with text "Code" and click the "download zip"
-
-2. extract your file and Open  the project in Your editor
-
-3. go to the terminal and install the node_ modules ny write this "npm i" or "npm Install"
+News ProjectThis project is a news application that displays different categories of news such as sports, health, science, and more. It includes features for signing up and signing in, where users can select their preferred news categories. Upon logging in, users will see news content tailored to their interests.Important NoteThe API is unable to display news while the project is hosted online. To view the news content, please download and run the project locally.Hosting LinkYou can view the project online here: News Project on Vercel.How to Download and Run the ProjectTo download and run the project locally, follow these steps:Download the ProjectClick the green "Code" button on the repository page.Select "Download ZIP".Extract the FilesExtract the downloaded ZIP file.Open the extracted folder in your code editor.Install DependenciesOpen the terminal in your code editor.Run the command npm install to install the required node modules.Once the installation is complete, you can start the project and view the news content.Thank you for using our News Project
